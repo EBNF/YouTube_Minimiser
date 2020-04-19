@@ -1,0 +1,32 @@
+/* landing page */
+#grid-title
+{
+    display: none !important;
+}
+
+#contents.style-scope.ytd-rich-grid-renderer
+{
+    display: none !important;
+}
+
+
+/* video page */
+#items
+{
+    display: none !important;
+}
+
+#sections
+{
+    display: none !important;
+}
+
+#subscribe-button
+{
+    display: none !important;
+}
+
+#logo
+{
+    display: none !important;
+}

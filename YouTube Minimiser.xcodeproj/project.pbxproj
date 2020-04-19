@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5877EF4244D03EA008217F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877EF3244D03EA008217F3 /* AppDelegate.swift */; };
+		B5877EF6244D03EA008217F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877EF5244D03EA008217F3 /* ContentView.swift */; };
+		B5877EF8244D03EC008217F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5877EF7244D03EC008217F3 /* Assets.xcassets */; };
+		B5877EFB244D03EC008217F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5877EFA244D03EC008217F3 /* Preview Assets.xcassets */; };
+		B5877EFE244D03EC008217F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5877EFC244D03EC008217F3 /* Main.storyboard */; };
+		B5877F0D244D0433008217F3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5877F0C244D0433008217F3 /* Cocoa.framework */; };
+		B5877F10244D0433008217F3 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877F0F244D0433008217F3 /* SafariExtensionHandler.swift */; };
+		B5877F12244D0433008217F3 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5877F11244D0433008217F3 /* SafariExtensionViewController.swift */; };
+		B5877F15244D0433008217F3 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5877F13244D0433008217F3 /* SafariExtensionViewController.xib */; };
+		B5877F18244D0433008217F3 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B5877F17244D0433008217F3 /* script.js */; };
+		B5877F1A244D0433008217F3 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5877F19244D0433008217F3 /* ToolbarItemIcon.pdf */; };
+		B5877F1E244D0433008217F3 /* YouTube Minimiser Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5877F0A244D0433008217F3 /* YouTube Minimiser Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5877F26244D0C24008217F3 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B5877F25244D0C24008217F3 /* style.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5877F1C244D0433008217F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5877EE8244D03EA008217F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5877F09244D0433008217F3;
+			remoteInfo = "YouTube Minimiser Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5877F22244D0433008217F3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5877F1E244D0433008217F3 /* YouTube Minimiser Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B5877EF0244D03EA008217F3 /* YouTube Minimiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube Minimiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5877EF3244D03EA008217F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5877EF5244D03EA008217F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5877EF7244D03EC008217F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5877EFA244D03EC008217F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5877EFD244D03EC008217F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5877EFF244D03EC008217F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5877F00244D03EC008217F3 /* YouTube_Minimiser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YouTube_Minimiser.entitlements; sourceTree = "<group>"; };
+		B5877F0A244D0433008217F3 /* YouTube Minimiser Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YouTube Minimiser Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5877F0C244D0433008217F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B5877F0F244D0433008217F3 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		B5877F11244D0433008217F3 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		B5877F14244D0433008217F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		B5877F16244D0433008217F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5877F17244D0433008217F3 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		B5877F19244D0433008217F3 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		B5877F1B244D0433008217F3 /* YouTube_Minimiser_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YouTube_Minimiser_Extension.entitlements; sourceTree = "<group>"; };
+		B5877F25244D0C24008217F3 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5877EED244D03EA008217F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5877F07244D0433008217F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877F0D244D0433008217F3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5877EE7244D03EA008217F3 = {
+			isa = PBXGroup;
+			children = (
+				B5877EF2244D03EA008217F3 /* YouTube Minimiser */,
+				B5877F0E244D0433008217F3 /* YouTube Minimiser Extension */,
+				B5877F0B244D0433008217F3 /* Frameworks */,
+				B5877EF1244D03EA008217F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5877EF1244D03EA008217F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5877EF0244D03EA008217F3 /* YouTube Minimiser.app */,
+				B5877F0A244D0433008217F3 /* YouTube Minimiser Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5877EF2244D03EA008217F3 /* YouTube Minimiser */ = {
+			isa = PBXGroup;
+			children = (
+				B5877EF3244D03EA008217F3 /* AppDelegate.swift */,
+				B5877EF5244D03EA008217F3 /* ContentView.swift */,
+				B5877EF7244D03EC008217F3 /* Assets.xcassets */,
+				B5877EFC244D03EC008217F3 /* Main.storyboard */,
+				B5877EFF244D03EC008217F3 /* Info.plist */,
+				B5877F00244D03EC008217F3 /* YouTube_Minimiser.entitlements */,
+				B5877EF9244D03EC008217F3 /* Preview Content */,
+			);
+			path = "YouTube Minimiser";
+			sourceTree = "<group>";
+		};
+		B5877EF9244D03EC008217F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5877EFA244D03EC008217F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5877F0B244D0433008217F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5877F0C244D0433008217F3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5877F0E244D0433008217F3 /* YouTube Minimiser Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5877F0F244D0433008217F3 /* SafariExtensionHandler.swift */,
+				B5877F11244D0433008217F3 /* SafariExtensionViewController.swift */,
+				B5877F13244D0433008217F3 /* SafariExtensionViewController.xib */,
+				B5877F16244D0433008217F3 /* Info.plist */,
+				B5877F17244D0433008217F3 /* script.js */,
+				B5877F19244D0433008217F3 /* ToolbarItemIcon.pdf */,
+				B5877F1B244D0433008217F3 /* YouTube_Minimiser_Extension.entitlements */,
+				B5877F25244D0C24008217F3 /* style.css */,
+			);
+			path = "YouTube Minimiser Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5877EEF244D03EA008217F3 /* YouTube Minimiser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5877F03244D03EC008217F3 /* Build configuration list for PBXNativeTarget "YouTube Minimiser" */;
+			buildPhases = (
+				B5877EEC244D03EA008217F3 /* Sources */,
+				B5877EED244D03EA008217F3 /* Frameworks */,
+				B5877EEE244D03EA008217F3 /* Resources */,
+				B5877F22244D0433008217F3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5877F1D244D0433008217F3 /* PBXTargetDependency */,
+			);
+			name = "YouTube Minimiser";
+			productName = "YouTube Minimiser";
+			productReference = B5877EF0244D03EA008217F3 /* YouTube Minimiser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5877F09244D0433008217F3 /* YouTube Minimiser Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5877F1F244D0433008217F3 /* Build configuration list for PBXNativeTarget "YouTube Minimiser Extension" */;
+			buildPhases = (
+				B5877F06244D0433008217F3 /* Sources */,
+				B5877F07244D0433008217F3 /* Frameworks */,
+				B5877F08244D0433008217F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YouTube Minimiser Extension";
+			productName = "YouTube Minimiser Extension";
+			productReference = B5877F0A244D0433008217F3 /* YouTube Minimiser Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5877EE8244D03EA008217F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ben Bullinger";
+				TargetAttributes = {
+					B5877EEF244D03EA008217F3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B5877F09244D0433008217F3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B5877EEB244D03EA008217F3 /* Build configuration list for PBXProject "YouTube Minimiser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5877EE7244D03EA008217F3;
+			productRefGroup = B5877EF1244D03EA008217F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5877EEF244D03EA008217F3 /* YouTube Minimiser */,
+				B5877F09244D0433008217F3 /* YouTube Minimiser Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5877EEE244D03EA008217F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877EFE244D03EC008217F3 /* Main.storyboard in Resources */,
+				B5877EFB244D03EC008217F3 /* Preview Assets.xcassets in Resources */,
+				B5877EF8244D03EC008217F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5877F08244D0433008217F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877F1A244D0433008217F3 /* ToolbarItemIcon.pdf in Resources */,
+				B5877F26244D0C24008217F3 /* style.css in Resources */,
+				B5877F15244D0433008217F3 /* SafariExtensionViewController.xib in Resources */,
+				B5877F18244D0433008217F3 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5877EEC244D03EA008217F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877EF6244D03EA008217F3 /* ContentView.swift in Sources */,
+				B5877EF4244D03EA008217F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5877F06244D0433008217F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5877F12244D0433008217F3 /* SafariExtensionViewController.swift in Sources */,
+				B5877F10244D0433008217F3 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5877F1D244D0433008217F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5877F09244D0433008217F3 /* YouTube Minimiser Extension */;
+			targetProxy = B5877F1C244D0433008217F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5877EFC244D03EC008217F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5877EFD244D03EC008217F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5877F13244D0433008217F3 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5877F14244D0433008217F3 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5877F01244D03EC008217F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5877F02244D03EC008217F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B5877F04244D03EC008217F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YouTube Minimiser/YouTube_Minimiser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"YouTube Minimiser/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "YouTube Minimiser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.YouTube-Minimiser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5877F05244D03EC008217F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "YouTube Minimiser/YouTube_Minimiser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"YouTube Minimiser/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "YouTube Minimiser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.YouTube-Minimiser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5877F20244D0433008217F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "YouTube Minimiser Extension/YouTube_Minimiser_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "YouTube Minimiser Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.YouTube-Minimiser.YouTube-Minimiser-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5877F21244D0433008217F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "YouTube Minimiser Extension/YouTube_Minimiser_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "YouTube Minimiser Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BB.YouTube-Minimiser.YouTube-Minimiser-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5877EEB244D03EA008217F3 /* Build configuration list for PBXProject "YouTube Minimiser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5877F01244D03EC008217F3 /* Debug */,
+				B5877F02244D03EC008217F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5877F03244D03EC008217F3 /* Build configuration list for PBXNativeTarget "YouTube Minimiser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5877F04244D03EC008217F3 /* Debug */,
+				B5877F05244D03EC008217F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5877F1F244D0433008217F3 /* Build configuration list for PBXNativeTarget "YouTube Minimiser Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5877F20244D0433008217F3 /* Debug */,
+				B5877F21244D0433008217F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5877EE8244D03EA008217F3 /* Project object */;
+}
