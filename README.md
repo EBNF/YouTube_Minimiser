@@ -16,8 +16,12 @@ Information concerning the possible streamlining of the reactivation process is 
 ## Set-Up
 
 ### Installation
-- launch "YouTube Minimiser.xcodeproj" in Xcode & run by clicking the play button.
+- launch "YouTube Minimiser.xcodeproj" in Xcode 
+- switch to the application scheme via Product > Scheme > "YouTube Minimiser" (very bottom) in the menu bar 
+- run the scheme (Cmd + R)
 - the "YouTube Minimiser" app can be terminated (Cmd + Q)
+- Xcode can be terminated 
+- the local copy of this repository may be deleted
 
 ### (Re-)Activation
 permanent setting (required once):
