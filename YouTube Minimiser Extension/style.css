@@ -1,22 +1,28 @@
-/* landing page */
-#grid-title
+/* LANDING PAGE */
+
+/* home feed */
+.style-scope.ytd-page-manager[page-subtype=home]
 {
     display: none !important;
 }
 
-#contents.style-scope.ytd-rich-grid-renderer
+/* trending button */
+#endpoint.yt-simple-endpoint.style-scope.ytd-mini-guide-entry-renderer[title=Trending]
 {
     display: none !important;
 }
 
 
-/* video page */
-#items
+/* VIDEO PAGE */
+
+/* recommendations */
+#secondary.style-scope.ytd-watch-flexy
 {
     display: none !important;
 }
 
-#sections
+/* other */
+#comments
 {
     display: none !important;
 }
