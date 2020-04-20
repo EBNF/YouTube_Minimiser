@@ -6,8 +6,14 @@
     display: none !important;
 }
 
-/* trending button */
+/* trending button sidebar minimized */
 #endpoint.yt-simple-endpoint.style-scope.ytd-mini-guide-entry-renderer[title=Trending]
+{
+    display: none !important;
+}
+
+/* trending button sidebar expanded */
+#endpoint.yt-simple-endpoint.style-scope.ytd-guide-entry-renderer[title=Trending]
 {
     display: none !important;
 }
